@@ -21,7 +21,7 @@ Understanding customers is important in business. The goal of this project was t
 **Design**
 
 To predict positive and negative reviews from customers, I first fitted into Random Forest Model, which showed a .825 accuracy score and .825 Roc Auc score. Afterward, I used Bidirectional LSTM to develop the prediction model with the text data. The accuracy score did not improve. However, Roc Auc's score did way better with .90.  I used an LDA topic modeling to analyze the negative reviews of customers. With 24 topics, the explained variance was the highest with .32. However, all the 24 topics were related to either books or movies. After visualizing the topics with PyLDAvis, all 24 topics were well distributed. 
->>>>>>> dc71125c6689a157e604e3015cbb7dc809a8ff9d
+
 
 
 **Data**
@@ -30,19 +30,7 @@ The Amazon Reviews dataset includes a total of 3.6M documents. In this project, 
 
 
 **Tools**
-<<<<<<< HEAD
-Tensorflow & Keras 
-Sklearn
-Spacy 
-Gensim
-NLTK
-PyLDAvis
-Matplotlib
-WordCloud
 
-**Future studies**
-More hyperparameter tuning is necessary (such as optimizer and activation functions) to overcome the overfitting issue and improve the accuracy score
-=======
 - Tensorflow & Keras 
 - Sklearn
 - Spacy 
@@ -54,6 +42,5 @@ More hyperparameter tuning is necessary (such as optimizer and activation functi
 
 **Future studies**
 
-More hyperparameter tuning is necessary for the Bidirectional LSTM model (such as dropout and optimizer) to overcome the overfitting issue and improve the accuracy score
->>>>>>> dc71125c6689a157e604e3015cbb7dc809a8ff9d
-reviews on other types of products should be included to further analyze customers’ complains
+- More hyperparameter tuning is necessary (such as optimizer and activation functions) to overcome the overfitting issue and improve the accuracy score
+- Due to the large text data size, I partially analyzed the negative reviews, so it turned out to be only complaints of books and movies. Using the entire dataset may yield different results and interpretations. Thus, tuning hyperparameter and rerunning with the entire data is necessary to see other types of complaints on other product types.
