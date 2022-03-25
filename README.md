@@ -11,6 +11,7 @@
 Understanding customers is important for a business to reflect what customers need and to help increase profits. The goal of this project was to predict and distinguish positive and negative reviews of customers and to analyze what customers complain about. I used [Amazon Reviews](https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews) found on Kaggle. To forecast whether customer reviews were either negatively or positively written,  I used Bidirectional LTSM and GRU and achieved .82 accuracy scores. Customers’ complaints are categorized by using an LDA model into 32 topics. 
 
 **Design**
+
 For the sentiment analysis, I predicted whether customer text reviews were positive or negative using deep learning techniques (i.e., RNN). After comparing deep learning models to my baseline model, a GRU model outperformed the baseline model with Random Forest and LTSM model. 
 
 Next, an LDA model was used to analyze and summarize what customers complained about products after text preprocessing. TF-IDF and bi-trigram improved the model performance than CountVectorizer with unigram. The number of the topic was decided by looking at the coherence score. 
